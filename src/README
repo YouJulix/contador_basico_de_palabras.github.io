@@ -1,6 +1,4 @@
-# contador_basico_de_palabras.github.io
-Programa básico hecho en Java que cuenta palabras y arroja el número total de palabras así como el número de repeticiones de cada palabra.
-
+-DESCRIPCION DEL PROYECTO
 Esta aplicación permite leer de un archivo de texto plano, y realizar un conteo estadístico de palabras,
 arrojando en consola y en un archivo llamado "reporte.palabras.txt" los resultados
 
@@ -17,8 +15,8 @@ En archivo
 
 -TECNOLOGIAS OCUPADAS
 	Linux Ubuntu 14.04 (64 bits)
-	Java versión 1.8
 	Eclipse
+	JAVA versión 1.7
 
 -FORMA DE USO/FORMA DE CARGAR EL PROYECTO
 	Descargar repositorio de github
@@ -98,8 +96,6 @@ En archivo
 	
 
 	
-
-
 
 
 
