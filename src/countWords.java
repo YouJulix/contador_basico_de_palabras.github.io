@@ -1,3 +1,5 @@
+package src;
+
 //import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -136,7 +138,7 @@ public class countWords {
 			
 			
 			System.out.println(" 3. 10 palabras más comunes: "); //Console
-			topWords(allWords,bw); //Mando a llamar a mi funcion para sacar el top 10
+			topWords(allWords,bw,stopWords); //Mando a llamar a mi funcion para sacar el top 10
 			
 			
 			
@@ -174,11 +176,11 @@ public class countWords {
 		}
 	}
 	
-	public static void topWords(HashMap<String,Integer> allWords, BufferedWriter bw){ //mando el apuntador de bw para escribir aquí
+	public static void topWords(HashMap<String,Integer> allWords, BufferedWriter bw,HashSet<String> stopWords){ //mando el apuntador de bw para escribir aquí
 		List<Element> listSorted =new ArrayList<Element>();		
 		
 		
-		for(String key : allWords.keySet()){
+		for(String key : allWords.keySet()){ //para cada palabra de allWords
 			Integer c = allWords.get(key);
 			Element e = new Element(key,c);
 			
@@ -212,12 +214,21 @@ public class countWords {
 		
 		
 		System.out.println("\tPalabra\t\t\t\tInteracion\n");
-		for(int i=0;(i<listSorted.size() && i<=9);i++){ //imprime las primeras 10 o hasta que la lista se vacie en caso de que el archivo tenga menos de 10 palabras
-			System.out.println("\t" + (i+1) +")" +listSorted.get(i).getWord() + "\t\t\t\t " +listSorted.get(i).getCountWord());
-			try {
-				bw.write("\t" + (i+1) +")" +listSorted.get(i).getWord() + "\t\t\t\t " +listSorted.get(i).getCountWord()+"\n");
-			} catch (IOException e) {
-				e.printStackTrace();
+
+
+		for(int i=0, j=0;(j<listSorted.size() && i<=9);i++,j++){ //imprime las primeras 10 o hasta que la lista se vacie en caso de que el archivo tenga menos de 10 palabras
+																//i controla el numero de palabras escritas, j la posc de la lista ordenado en la que va
+			String word ="";
+			word = listSorted.get(j).getWord();
+			if(stopWords.contains(word)){
+				i--; //si es un stop word no cuentes que has escrito una palabra
+			}else{
+				System.out.println("\t" + (i+1) +")" + word + "\t\t\t\t " +listSorted.get(j).getCountWord());
+				try {
+					bw.write("\t" + (i+1) +")" + word + "\t\t\t\t " +listSorted.get(j).getCountWord()+"\n");
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
 			}
 		}
 		
