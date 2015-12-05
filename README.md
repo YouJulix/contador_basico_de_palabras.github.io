@@ -22,14 +22,14 @@ En archivo
 
 -FORMA DE USO/FORMA DE CARGAR EL PROYECTO
 	Descargar repositorio de github
-	
-	En linux:
-	Abrir una terminal
+	Descomprimirlo, se descomprimirá una carpeta llamada "contador_basico_de_palabras.github.io-master"
+	Desde cmd(Windows), o terminal(Linux) nos ubicamos dentro de dicha carpeta, hacemos lo siguiente
+
 	//Compilar programa con:
-		javac coutWords.java
+		javac src/coutWords.java
 	
 	//Ejecutar programa
-		java coutWords name_archivo.txt
+		java src/coutWords name_archivo.txt
 
 
 	//donde "name_archivo.txt" será el nombre de nuestro archivo a procesar
@@ -43,10 +43,10 @@ En archivo
 		Hello World esta es una prueba
 	
 
-	Si abrimos un terminal primero compilamos (javac countWords.java),
+	Si abrimos un terminal y nos ubicamos en la carpeta "contador_basico_de_palabras.github.io-master" y compilamos (javac src/countWords.java),
 	luego tenemos que ejecutar:
 	
-		java coutWords prueba.txt
+		java src/coutWords prueba.txt
 	
 	El resultado será el siguiente:
 
@@ -56,7 +56,7 @@ En archivo
 				 2. Total de palabras sin auxiliares: 3
 				 3. 10 palabras más comunes: 
 
-					------- TOP 10 sin auxiliares ------
+					------- TOP 10 ------
 
 					Palabra				Interacion
 
@@ -66,14 +66,14 @@ En archivo
 
 
 
-		En el archivo "reporte.palabras.txt":
+		En la carpeta se crea el archivo "reporte.palabras.txt" que contiene:
 			
 		
 				 1. Total de palabras: 6
 				 2. Total de palabras sin auxiliares: 3
 				 3. 10 palabras más comunes: 
 
-					------- TOP 10 sin auxiliares ------
+					------- TOP 10 ------
 
 					Palabra				Interacion
 
@@ -98,7 +98,6 @@ En archivo
 	
 
 	
-
 
 
 
