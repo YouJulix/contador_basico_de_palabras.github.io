@@ -8,7 +8,7 @@ En consola muestra:
 	1) Numero de palabras totales
 	2) Numero de palabras sin auxiliares
 	3) Las 10 palabras más repetidas
-
+	
 En archivo
 	1) La misma información que en consola
 	2) Todas las palabras encontradas seguidas de su número de repetición.	
