@@ -1,8 +1,6 @@
 # contador_basico_de_palabras.github.io
-Programa básico hecho en Java que cuenta palabras y muestra el número total de palabras así como el número de repeticiones de cada palabra.
-
-Esta aplicación permite leer de un archivo de texto plano, y realizar un conteo estadístico de palabras,
-mostrando en consola y en un archivo llamado "reporte.palabras.txt" los resultados
+###DESCRIPCIÓN DEL CONTADOR
+Es un programa básico realizado en Java que cuenta el número de repeticiones de las palabras (con auxiliares y sin auxiliares) en un archivo de texto, mostrando además cuales fueron las 10 más repetidas.
 
 En consola muestra:
 
@@ -17,28 +15,36 @@ En archivo
     2.Todas las palabras encontradas seguidas de su número de repetición.	
 
 
--TECNOLOGÍAS OCUPADAS
+###TECNOLOGÍAS OCUPADAS
 
     	-Linux Ubuntu 14.04 (64 bits)
     	-Java versión 1.8
     	-Eclipse Mars
 
--FORMA DE USO/FORMA DE CARGAR EL PROYECTO
+###FORMA DE USO/FORMA DE CARGAR EL PROYECTO
+
+	Es necesario tener instalada una versión de java superior a la 1.6
+	
 	Descargar repositorio de github
+	
 	Descomprimirlo, se descomprimirá una carpeta llamada "contador_basico_de_palabras.github.io-master"
 	Ubicarnos dentro de dicha carpeta desde cmd(Windows), o terminal(Linux), primero:
 
 	//Compilar programa con:
-		javac src/coutWords.java
+		```sh
+		$ javac src/coutWords.java 
+		```
 	
 	//Ejecutar programa
-		java src/coutWords name_archivo.txt
+		```sh
+		$ java src/coutWords name_archivo.txt
+		```
 
 
 	//donde "name_archivo.txt" será el nombre de nuestro archivo a procesar
 
 
--EJEMPLO DE ALGUNA CORRIDA
+###EJEMPLO DE ALGUNA CORRIDA
 	
 	Dentro del proyecto se incluye un archivo llamado "prueba.txt", que
 	contiene lo siguiente:
@@ -46,10 +52,16 @@ En archivo
 		Hello World esta es una prueba
 	
 
-	Si abrimos un terminal y nos ubicamos en la carpeta "contador_basico_de_palabras.github.io-master" y compilamos (javac src/countWords.java),
+	Si abrimos un terminal y nos ubicamos en la carpeta "contador_basico_de_palabras.github.io-master" y compilamos:
+		```sh
+		$ javac src/countWords.java),
+		```
 	luego tenemos que ejecutar:
-	
-		java src/coutWords prueba.txt
+		
+		```sh
+		$ java src/coutWords prueba.txt
+		```
+		
 	
 	El resultado será el siguiente:
 
