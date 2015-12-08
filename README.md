@@ -30,12 +30,12 @@ En archivo
 	Descomprimirlo, se descomprimirá una carpeta llamada "contador_basico_de_palabras.github.io-master"
 	Ubicarnos dentro de dicha carpeta desde cmd(Windows), o terminal(Linux), primero:
 
-	//Compilar programa con:
+	Compilar programa con:
 		```sh
 		$ javac src/coutWords.java 
 		```
 	
-	//Ejecutar programa
+	Ejecutar programa
 		```sh
 		$ java src/coutWords name_archivo.txt
 		```
