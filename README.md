@@ -5,17 +5,13 @@ Esta aplicación permite leer de un archivo de texto plano, y realizar un conteo
 mostrando en consola y en un archivo llamado "reporte.palabras.txt" los resultados
 
 En consola muestra:
-1. Numero de palabras totales 
-
-2. Numero de palabras sin auxiliares
-3. 
-
-3. Las 10 palabras más repetidas
+	1. Numero de palabras totales 
+	2. Numero de palabras sin auxiliares
+	3. Las 10 palabras más repetidas
 	
 En archivo
-	1) La misma información que en consola
-	2) Todas las palabras encontradas seguidas de su número de repetición.	
-
+	1. La misma información que en consola
+	2. Todas las palabras encontradas seguidas de su número de repetición.	
 
 
 -TECNOLOGÍAS OCUPADAS
