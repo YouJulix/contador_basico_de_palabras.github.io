@@ -6,7 +6,10 @@ mostrando en consola y en un archivo llamado "reporte.palabras.txt" los resultad
 
 En consola muestra:
 1. Numero de palabras totales 
+
 2. Numero de palabras sin auxiliares
+3. 
+
 3. Las 10 palabras más repetidas
 	
 En archivo
