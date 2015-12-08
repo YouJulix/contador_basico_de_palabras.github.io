@@ -15,12 +15,13 @@ En archivo
 
     1.La misma información que en consola
     2.Todas las palabras encontradas seguidas de su número de repetición.	
-	
+
 
 -TECNOLOGÍAS OCUPADAS
-	-Linux Ubuntu 14.04 (64 bits)
-        -Java versión 1.8
-        -Eclipse Mars
+
+    	-Linux Ubuntu 14.04 (64 bits)
+    	-Java versión 1.8
+    	-Eclipse Mars
 
 -FORMA DE USO/FORMA DE CARGAR EL PROYECTO
 	Descargar repositorio de github
