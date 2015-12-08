@@ -1,9 +1,6 @@
 # contador_basico_de_palabras.github.io
 ###DESCRIPCIÓN DEL CONTADOR
 Es un programa básico realizado en Java que cuenta el número de repeticiones de las palabras (con auxiliares y sin auxiliares) en un archivo de texto, mostrando además cuales fueron las 10 más repetidas.
-		```sh
-		$ javac src/coutWords.java 
-		```
 
 En consola muestra:
 
@@ -34,14 +31,10 @@ En archivo
 	Ubicarnos dentro de dicha carpeta desde cmd(Windows), o terminal(Linux), primero:
 
 	Compilar programa con:
-		```sh
 		$ javac src/coutWords.java 
-		```
 	
 	Ejecutar programa
-		```sh
 		$ java src/coutWords name_archivo.txt
-		```
 
 
 	//donde "name_archivo.txt" será el nombre de nuestro archivo a procesar
@@ -56,14 +49,12 @@ En archivo
 	
 
 	Si abrimos un terminal y nos ubicamos en la carpeta "contador_basico_de_palabras.github.io-master" y compilamos:
-		```sh
-		$ javac src/countWords.java),
-		```
+	
+		$ javac src/countWords.java
+		
 	luego tenemos que ejecutar:
 		
-		```sh
 		$ java src/coutWords prueba.txt
-		```
 		
 	
 	El resultado será el siguiente:
